@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "job-copilot"
+version = "0.1.0"
+description = "Copilote de candidature agentique avec humain dans la boucle (LLMOps end-to-end)"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Mohammed-Amine Salhi" }]
+dependencies = [
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.30",
+  "pydantic>=2.7",
+  "pydantic-settings>=2.3",
+  "sqlalchemy>=2.0",
+  "psycopg[binary]>=3.2",
+  "pgvector>=0.3",
+  "litellm>=1.50",
+  "langgraph>=0.2",
+  "langfuse>=2.50",
+  "httpx>=0.27",
+  "feedparser>=6.0",
+  "pyyaml>=6.0",
+  "tenacity>=9.0",
+]
+
+[project.optional-dependencies]
+ui = ["streamlit>=1.38"]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/job_copilot"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

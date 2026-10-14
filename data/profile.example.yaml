@@ -1,0 +1,22 @@
+# Copie ce fichier en data/profile.yaml et remplace par TON vrai CV.
+# Chaque puce sera une « preuve » numérotée : le vérificateur ne laisse passer
+# que ce qui est appuyé ici. Plus c'est précis (chiffres réels, outils), mieux c'est.
+name: Prénom Nom
+headline: Ingénieur IA
+summary: Ingénieur IA diplômé, orienté ML en production.
+skills: [Python, PyTorch, Docker, FastAPI, SQL]
+experiences:
+  - title: Ingénieur IA (stage de fin d'études)
+    company: Entreprise X
+    period: "2025"
+    bullets:
+      - Conception d'un pipeline ML de bout en bout et déploiement en production.
+projects:
+  - name: Mon projet
+    description: Description factuelle en une phrase.
+    tags: [ML]
+education:
+  - school: Mon école
+    degree: Diplôme d'ingénieur
+    period: "2022-2025"
+languages: ["Français (natif)", "Anglais (courant)"]
