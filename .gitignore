@@ -1,2 +1,9 @@
 .venv-job-agent/
 .venv-job-agent/
+.venv-job-agent/
+
+.env
+.venv/
+data/profile.yaml
+*.egg-info/
+evals/reports/*.json
