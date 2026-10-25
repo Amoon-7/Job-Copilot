@@ -7,3 +7,6 @@
 data/profile.yaml
 *.egg-info/
 evals/reports/*.json
+
+__pycache__/
+*.py[cod]
